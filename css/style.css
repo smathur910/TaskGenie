@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+    --background: #DEEFE7;
+    --secondary: #DEEFE7;
+    --btn-primary: #164773;
+    --btn-hover: #159A9C;
+    --primary-white: #FFFFFF;
+    --primary-gray: #B4BEC9;
+    --text-color: #3B3936;
+    --tirnary: #BD2A2E;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Marcellus', serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    margin: 30px auto;
+}
+.img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-container img{
+    width: 30%;
+}
+.main-card {
+    background: var(--primary-white);
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main-card h1{
+    margin: 30px 15px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 45px 15px;
+    gap: 10px;
+}
+
+.list-container li {
+    border: 1px solid #3b8c6e57;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #3B8C6E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-container li span.delete {
+    border-left: 1px solid #3b8c6e57;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.delete{
+    font-size: 15px;
+    color: var(--tirnary);
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 20px;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid var(--primary-gray);
+    border-radius: 100px;
+    width: 100%;
+}
+
+.btn-submit {
+    background: var(--btn-primary);
+    color: var(--primary-white);
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+@media (width <=390px){
+    .container {
+        max-width: 320px;
+    }
+}
